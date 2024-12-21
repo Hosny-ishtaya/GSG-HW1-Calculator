@@ -6,13 +6,13 @@ interface Iprops {
   result: string;
 }
 const Resultoperation = (props:Iprops) => {
-  const symbol = props.result[0];
-  const number = props.result.slice(1);
+  const symbol = props.result[1];
+  const number = props.result.slice(2);
   return (
     <div className="result">
       <p>{props.operation}</p>
       <p>{symbol}</p>
-      <p>{number}</p>
+      <span>&nbsp;{number}</span>
     </div>
   )
 }

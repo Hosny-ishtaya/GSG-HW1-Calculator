@@ -1,8 +1,8 @@
 import React from 'react'
-import './Calculater.css'
+import './Calculator.css'
 import {useState} from 'react'
-import Resultoperation from '../calculater.result/Resultoperation.tsx'
-const Calculater = () => {
+import Resultoperation from '../Calculator.result/Resultoperation.tsx'
+const Calculator = () => {
     const [oper ,setOper] = useState("")
     const [result,setResult] = useState("");
 
@@ -10,12 +10,12 @@ const Calculater = () => {
         setOper((prevOper) => prevOper + value);
       };
   return (
-    <div className="calculater-container">
+    <div className="Calculator-container">
         <>
          <Resultoperation  operation={oper} result={result}/>
         </>
        
-        <div className="calculater-button">
+        <div className="Calculator-button">
             <button className="number-button" onClick={() => handleButtonClick('1')}>1</button>
             <button className="number-button" onClick={() => handleButtonClick('2')}>2</button>
             <button className="number-button" onClick={() => handleButtonClick('3')}>3</button>
@@ -34,4 +34,4 @@ const Calculater = () => {
   )
 }
 
-export default Calculater
+export default Calculator

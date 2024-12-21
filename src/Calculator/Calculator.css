@@ -1,4 +1,4 @@
-.calculater-container{
+.Calculator-container{
     width: 300px;
     height: 550px;
     padding: 30px 30px;
@@ -9,14 +9,14 @@
 
 
 }
-.calculater-button{
+.Calculator-button{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-left: 12px;
     margin-top: 10px;
 }
-.calculater-button button{
+.Calculator-button button{
     width:87px;
     height: 80px;
     border-radius: 6px;

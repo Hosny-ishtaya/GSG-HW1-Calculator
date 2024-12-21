@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Calculater from './calculater/Calculater.tsx';
+import Calculator from './Calculator/Calculator.tsx';
 
 function App() {
   return (
     <div className="App">
-      <Calculater/>
+      <Calculator/>
     </div>
   );
 }
